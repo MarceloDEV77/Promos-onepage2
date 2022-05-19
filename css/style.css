@@ -1,0 +1,218 @@
+/*Nome: One page Promos 
+Dev:Marcelo Olimpio
+Empresa: WBSYS
+Site: http://wbsys.com.br*/
+:root{
+    --cor01:#9B0006;
+    --cor02:#770306;
+    --cor03:#333333;
+    --cor04:background: rgb(255,255,255);background: linear-gradient(180deg, rgb(255, 255, 255) 16%, rgba(194,194,194,1) 100%);
+    --cor05:#eef9ff;
+    --cor06:white;
+    --cor07:#585858; /*cor usada paras textos*/
+     
+}
+
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+background-color: var(--cor04);
+font-family: Arial, Helvetica, sans-serif;
+}    
+.container{
+display: flex;
+flex-direction:column;
+height: 1800px;
+}
+#supMenu{
+color: var(--cor05);
+height: 50px;
+background-color: var(--cor03);
+width: 100%;
+border-bottom:  1px solid var(--cor05);
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+.sub{
+margin-left: 20px;
+}
+#slider{
+height: 500px;
+background-color: var(--cor04);
+display: flex;
+flex-direction: row;
+background-image: url('./img/slider/sl1.jpg');
+}
+.menu{
+border: 3px solid var(--cor02);
+
+background-color: var(--cor02);
+width: 100%;
+height:60px;
+position: relative;
+display: flex;
+flex-direction: row;
+align-items: center;
+z-index: 10;
+}
+#logo{
+background-color: var(--cor06);
+
+}
+#logo img{
+height: 60px;
+width: auto;
+padding-left: 30px;
+padding-right: 30px;
+}
+#dividir1{
+background-color: var(--cor02);
+-webkit-box-shadow: 1px 15px 24px 5px rgba(0,0,0,0.42); 
+box-shadow: 1px 15px 24px 5px rgba(0,0,0,0.42);
+width: 15vw;
+height: 500px;
+-webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+        transform: skew(30deg);
+position: relative;
+left: 100px;
+
+}
+#dividir2{
+background-color: var(--cor01);
+width: 15vw;
+height: 500px;
+-webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+        transform: skew(30deg);
+position: relative;
+left: 70px;
+opacity: 0.8;
+}
+.nome p{
+color: var(--cor05);
+font-size: 40px;
+
+font-weight: 700;
+margin-left: 20px;
+
+}
+
+#link ul li a{
+font-weight: 700;
+color: var(--cor05);
+text-decoration: none;
+height: 60px;
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-left: 15px;
+padding-left: 8px;
+padding-right: 8px;
+}
+#link ul li{
+float: left;
+
+
+
+}
+
+#link ul li :hover{
+background-color: var(--cor05);
+color: var(--cor01);
+transition: 0.5s;
+}
+
+
+
+#link ul{
+
+list-style-type: none;
+overflow: hidden;
+}
+
+#about{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    position: relative;
+    left: -1500px;
+    visibility:hidden;
+   /* border-bottom: var(--cor02) 1px solid;*/
+}
+#tituloSobre{
+    margin-left: 30px;
+}
+#contSobre{
+    margin-top: 30px;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+}
+#imgSobre{
+   
+    height: 300px;
+    width: auto;
+    margin: 0px 20px 0px 25px;
+   
+}
+#textoSobre1{
+font-size: 1.3vw;
+color: var(--cor07);
+padding: 25px;
+}
+#team{
+    background-color: var(--cor03);
+    color: #eef9ff;
+    display: flex;
+    flex-direction:row;
+        
+    
+}
+#teamTitulo{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.eng{
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 35px;
+display: flex;
+flex-direction: column;
+width: 300px;
+justify-content: center;
+text-align: center;
+
+}
+#engBox{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#engFoto{
+background-color:#eef9ff;
+height: 230px;
+width: 230px;
+border-radius: 50%;
+border:  solid var(--cor02) 3px;
+}
+
+#saibaMais{
+
+padding: 15px;
+text-decoration: none;
+font-size: 18px;
+color: var(--cor05);
+font-weight: 700;
+display: block;
+}
